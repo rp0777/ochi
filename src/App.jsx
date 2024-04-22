@@ -4,7 +4,7 @@ import Eyes from "./components/Eyes";
 import Featured from "./components/Featured";
 import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
-import Marqee from "./components/Marqee";
+import Marquee from "./components/Marquee";
 import Navbar from "./components/Navbar";
 import LocomotiveScroll from "locomotive-scroll";
 
@@ -17,9 +17,11 @@ function App() {
 
       <LandingPage />
 
-      <Marqee />
+      <div data-scroll data-scroll-section data-scroll-speed=".3" className="">
+        <Marquee />
 
-      <About />
+        <About />
+      </div>
 
       <Eyes />
 
